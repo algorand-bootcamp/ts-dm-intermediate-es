@@ -113,6 +113,7 @@ export class DigitalMarketplace extends Contract {
   // Metodo para que el comprador retire sus ganancias y assets restantes
   withdraw(asset: AssetID) {
     const currentDeposit = this.forSaleBoard({ owner: this.txn.sender, asa: asset.id }).value.deposited;
+    this.forSaleBoard({ owner: this.txn.sender, asa: asset.id }).delete();
 
     sendAssetTransfer({
       xferAsset: asset,
