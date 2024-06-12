@@ -6,6 +6,9 @@
     },
     {
       "path": "projects/DigitalMarketplace"
+    },
+    {
+      "path": "projects/DigitalMarketplaceFrontend"
     }
   ],
   "settings": {
